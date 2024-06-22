@@ -135,7 +135,7 @@
     window.addEventListener('load', () => {
       setTimeout(() => {
         preloader.remove()
-      }, 1000);
+      }, 100);
     });
   }
 
