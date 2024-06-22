@@ -39,12 +39,48 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+
+    <style>
+      .advertisement {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #f44336; /* Red background */
+        color: #ffffff; /* White text */
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 24px; /* Large font size */
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: 1000; /* Ensure it's above other content */
+        animation: shake 0.2s infinite alternate; /* Animate using shake effect */
+      }
+  
+      .advertisement a {
+        color: #ffffff; /* White text for link */
+        text-decoration: underline; /* Underline link */
+      }
+  
+      /* Animation keyframes for shake effect */
+      @keyframes shake {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(70px);
+        }
+      }
+    </style>
   </head>
 
   <body>
     <!-- ======= Mobile nav toggle button ======= -->
     <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
     <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+
+    <div class="advertisement">
+      <a href="https://minesweeperonline.com/" target="_blank">LUCY IS OFFERING MINESWEEPER, AND FOR FREE, JUST CLICK HERE!!</a>
+    </div>
 
     <!-- ======= Header ======= -->
     <header id="header" class="d-flex flex-column justify-content-center">
