@@ -1,187 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>ftnick</title>
-    <meta content="ftnick's portfolio" name="description" />
-    <meta content="portfolio" name="keywords" />
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="https://file.ftnick.xyz/favions/bright/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://file.ftnick.xyz/favions/bright/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://file.ftnick.xyz/favions/bright/favicon-16x16.png">
-    <link rel="manifest" href="https://file.ftnick.xyz/favions/bright/site.webmanifest">
+  <title>ftnick</title>
+  <meta content="ftnick's portfolio" name="description" />
+  <meta content="portfolio" name="keywords" />
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://file.ftnick.xyz/favions/bright/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://file.ftnick.xyz/favions/bright/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://file.ftnick.xyz/favions/bright/favicon-16x16.png">
+  <link rel="manifest" href="https://file.ftnick.xyz/favions/bright/site.webmanifest">
 
-    <!-- Vendor CSS Files -->
-    <link href="https://file.ftnick.xyz/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="https://file.ftnick.xyz/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://file.ftnick.xyz/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="https://file.ftnick.xyz/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link
-      href="https://file.ftnick.xyz/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
-    <link href="https://file.ftnick.xyz/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" />
 
-    <!-- Template Main CSS File -->
-    <link href="https://file.ftnick.xyz/css/style.css" rel="stylesheet" />
-  </head>
+  <!-- Vendor CSS Files -->
+  <link href="https://file.ftnick.xyz/vendor/aos/aos.css" rel="stylesheet" />
+  <link href="https://file.ftnick.xyz/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://file.ftnick.xyz/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://file.ftnick.xyz/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://file.ftnick.xyz/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="https://file.ftnick.xyz/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <body>
-    <!-- ======= Mobile nav toggle button ======= -->
-    <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <!-- Template Main CSS File -->
+  <link href="https://file.ftnick.xyz/css/style.css" rel="stylesheet" />
 
-    <!-- ======= Header ======= -->
-    <header id="header" class="d-flex flex-column justify-content-center">
-      <nav id="navbar" class="navbar nav-menu">
-        <ul>
-          <li>
-            <a href="#hero" class="nav-link scrollto active"
-              ><i class="bx bx-home"></i> <span>Home</span></a
-            >
-          </li>
-          <li>
-            <a href="#about" class="nav-link scrollto"
-              ><i class="bx bx-user"></i> <span>About</span></a
-            >
-          </li>
-          <!--<li>
+  <style>
+    #notification {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #f3f3f3;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li>
+          <a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a>
+        </li>
+        <li>
+          <a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a>
+        </li>
+        <!--<li>
             <a href="#skills" class="nav-link scrollto"
               ><i class="bx bx-file-blank"></i> <span>Skills</span></a
             >
           </li>-->
-          <!--<li>
+        <!--<li>
             <a href="#resume" class="nav-link scrollto"
               ><i class="bx bx-file-blank"></i> <span>Resume</span></a
             >
           </li>-->
-          <!--<li>
+        <!--<li>
             <a href="#portfolio" class="nav-link scrollto"
               ><i class="bx bx-book-content"></i> <span>Portfolio</span></a
             >
           </li>-->
-          <li>
-            <a href="#skills" class="nav-link scrollto"
-              ><i class="bx bx-server"></i> <span>Skills</span></a
-            >
-          </li>
-          <li>
-            <a href="#contact" class="nav-link scrollto"
-              ><i class="bx bx-envelope"></i> <span>Contact</span></a
-            >
-          </li>
-        </ul>
-      </nav>
-      <!-- .nav-menu -->
-    </header>
-    <!-- End Header -->
+        <li>
+          <a href="#skills" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Skills</span></a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- .nav-menu -->
+  </header>
+  <!-- End Header -->
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-center">
-      <div class="container" data-aos="zoom-in" data-aos-delay="100">
-        <h1>Nick</h1>
-        <p>
-          I'm a
-          <span
-            class="typed"
-            data-typed-items="Developer, Programmer, Designer, Freelancer, Engineer"
-          ></span>
-        </p>
-        <div class="social-links">
-          <a href="https://discord.com/users/701632642822701057" class="discord"
-            ><i class="bx bxl-discord"></i
-          ></a>
-          <a href="mailto:nicksynthex@gmail.com" class="gmail"
-            ><i class="bx bxl-gmail"></i
-          ></a>
-          <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
-        </div>
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Nick</h1>
+      <p>
+        I'm a
+        <span class="typed" data-typed-items="Developer, Programmer, Designer, Freelancer, Engineer"></span>
+      </p>
+      <div class="social-links">
+        <a href="https://discord.com/users/701632642822701057" class="discord"><i class="bx bxl-discord"></i></a>
+        <a href="mailto:nicksynthex@gmail.com" class="gmail"><i class="bx bxl-gmail"></i></a>
+        <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
       </div>
-    </section>
-    <!-- End Hero -->
+    </div>
+  </section>
+  <!-- End Hero -->
 
-    <main id="main">
-      <!-- ======= About Section ======= -->
-      <section id="about" class="about">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>About Me</h2>
-            <p>
-              Did you know? I'm completely self-taught, piecing together my
-              knowledge through countless trials and errors. It's been a bumpy
-              road, but I've learned a thing or two along the way.
-            </p>
-          </div>
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>About Me</h2>
+          <p>
+            Did you know? I'm completely self-taught, piecing together my
+            knowledge through countless trials and errors. It's been a bumpy
+            road, but I've learned a thing or two along the way.
+          </p>
+        </div>
 
-          <div class="row">
-            <div class="col-lg-8 pt-4 pt-lg-0 content">
-              <!--<h3>UI/UX Designer &amp; Web Developer.</h3>
+        <div class="row">
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <!--<h3>UI/UX Designer &amp; Web Developer.</h3>
             <p class="fst-italic">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
               magna aliqua.
             </p>-->
-              <div class="row">
-                <div class="col-lg-6">
-                  <ul>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Development Studios I've Contributed Too:</strong>
-                      <span
-                        >AquaShell, Deva Development, Synthex Development,
-                        Anomaly Entertainment and Inverted Gaming Studios</span
-                      >
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Programming Languages I'm Used To:</strong>
-                      <span>JavaScript, C#, HTML, CSS, LUA/LUAU, Python</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Attempting To Learn:</strong>
-                      <span>Java, C++, C</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-lg-6">
-                  <ul>
-                    <li>
-                      <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
-                      <span>15</span>
-                    </li>
-                    <li>
-                      <i class="bi bi-chevron-right"></i>
-                      <strong>Education:</strong> <span>Highschool</span>
-                    </li>
-                  </ul>
-                </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Development Studios I've Contributed Too:</strong>
+                    <span>AquaShell, Deva Development, Synthex Development,
+                      Anomaly Entertainment and Inverted Gaming Studios</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Programming Languages I'm Used To:</strong>
+                    <span>JavaScript, C#, HTML, CSS, LUA/LUAU, Python</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Attempting To Learn:</strong>
+                    <span>Java, C++, C</span>
+                  </li>
+                </ul>
               </div>
-              <p>
-                Looking to hire me? Send me a DM on discord or an email. I'm
-                always happy to discuss potential projects and opportunities.
-              </p>
+              <div class="col-lg-6">
+                <ul>
+                  <li>
+                    <i class="bi bi-chevron-right"></i> <strong>Age:</strong>
+                    <span>15</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-chevron-right"></i>
+                    <strong>Education:</strong> <span>Highschool</span>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <p>
+              Looking to hire me? Send me a DM on discord or an email. I'm
+              always happy to discuss potential projects and opportunities.
+            </p>
           </div>
         </div>
-      </section>
-      <!-- End About Section -->
+      </div>
+    </section>
+    <!-- End About Section -->
 
-      <!-- ======= Resume Section =======
+    <!-- ======= Resume Section =======
       <section id="resume" class="resume">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
@@ -224,7 +213,7 @@
       </section>
       End Resume Section -->
 
-      <!-- ======= Portfolio Section =======
+    <!-- ======= Portfolio Section =======
       <section id="portfolio" class="portfolio section-bg">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
@@ -529,59 +518,51 @@
       </section>
        End Portfolio Section -->
 
-      <!-- ======= skills Section ======= -->
-      <section id="skills" class="services">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Skills</h2>
-            <p>Some of my amazing skills xd.</p>
+    <!-- ======= skills Section ======= -->
+    <section id="skills" class="services">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Some of my amazing skills xd.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-blue">
+              <h4><a href="#contact-me">Experienced Software Development</a></h4>
+              <p>
+                Experienced programming and software development skills using tools that include; roblox studio, unity,
+                python libraries, visual studio etc.
+              </p>
+            </div>
           </div>
 
-          <div class="row">
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <div class="icon-box iconbox-blue">
-                <h4><a href="#contact-me">Experienced Software Development</a></h4>
-                <p>
-                  Experienced programming and software development skills using tools that include; roblox studio, unity, python libraries, visual studio etc.
-                </p>
-              </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
+            data-aos-delay="300">
+            <div class="icon-box iconbox-pink">
+              <h4><a href="#contact-me">Experienced In Leadership & Teams</a></h4>
+              <p>
+                Experienced in leading a team of developers in design implementation and development of different kinds
+                of software and goals.
+              </p>
             </div>
+          </div>
 
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
-              data-aos="zoom-in"
-              data-aos-delay="300"
-            >
-              <div class="icon-box iconbox-pink">
-                <h4><a href="#contact-me">Experienced In Leadership & Teams</a></h4>
-                <p>
-                  Experienced in leading a team of developers in design implementation and development of different kinds of software and goals.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
-              data-aos="zoom-in"
-              data-aos-delay="100"
-            >
-              <div class="icon-box iconbox-yellow">
-                <h4><a href="">Personally Perfect (PLACEHOLDER_9192P)</a></h4>
-                <p>
-                  Manage personal schedules effectively, balancing schoolwork, extracurricular activities, and personal commitments.
-                </p>
-              </div>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-yellow">
+              <h4><a href="">Personally Perfect (PLACEHOLDER_9192P)</a></h4>
+              <p>
+                Manage personal schedules effectively, balancing schoolwork, extracurricular activities, and personal
+                commitments.
+              </p>
             </div>
           </div>
         </div>
-      </section>
-      <!-- End skills Section -->
+      </div>
+    </section>
+    <!-- End skills Section -->
 
-      <!-- ======= Testimonials Section ======= 
+    <!-- ======= Testimonials Section ======= 
     <section id="testimonials" class="testimonials section-bg">
       <div class="container" data-aos="fade-up">
 
@@ -626,89 +607,96 @@
     </section>
     End Testimonials Section -->
 
-      <!-- ======= Contact Section ======= -->
-      <section id="contact" class="contact">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Contact</h2>
-          </div>
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
 
-          <div class="row mt-1">
-            <div class="info">
-              <div class="email" style="margin-bottom: 20px">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>
-                  <a href="mailto:nicksynthex@gmail.com"
-                    >nicksynthex@gmail.com</a
-                  >
-                </p>
-              </div>
+        <div class="row mt-1">
+          <div class="info">
+            <div class="email" style="margin-bottom: 20px">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>
+                <a href="mailto:nicksynthex@gmail.com">nicksynthex@gmail.com</a>
+              </p>
+            </div>
 
-              <div class="discord" style="margin-bottom: 20px">
-                <i class="bi bi-discord"></i>
-                <h4>Discord:</h4>
-                <p>
-                  <a href="https://discord.com/users/701632642822701057"
-                    >@ftnick</a
-                  >
-                </p>
-              </div>
+            <div class="discord" style="margin-bottom: 20px">
+              <i class="bi bi-discord"></i>
+              <h4>Discord:</h4>
+              <p>
+                <a href="https://discord.com/users/701632642822701057">@ftnick</a>
+              </p>
+            </div>
 
-              <div class="controller" style="margin-bottom: 20px">
-                <i class="bi bi-controller"></i>
-                <h4>Roblox:</h4>
-                <p>
-                  <a href="https://www.roblox.com/users/885446584/profile"
-                    >@repostnick</a
-                  >
-                </p>
-              </div>
+            <div class="controller" style="margin-bottom: 20px">
+              <i class="bi bi-controller"></i>
+              <h4>Roblox:</h4>
+              <p>
+                <a href="https://www.roblox.com/users/885446584/profile">@repostnick</a>
+              </p>
+            </div>
 
-              <div class="controller" style="margin-bottom: 20px">
-                <i class="bi bi-snapchat"></i>
-                <h4>Snapchat:</h4>
-                <p>
-                  <a href="https://www.snapchat.com/add/ftnick">@ftnick</a>
-                </p>
-              </div>
+            <div class="controller" style="margin-bottom: 20px">
+              <i class="bi bi-snapchat"></i>
+              <h4>Snapchat:</h4>
+              <p>
+                <a href="https://www.snapchat.com/add/ftnick">@ftnick</a>
+              </p>
             </div>
           </div>
         </div>
-      </section>
-      <!-- End Contact Section -->
-    </main>
-    <!-- End #main -->
-
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-      <div class="container">
-        <div class="credits">
-          @ftnick | Work In Progress | <a href="https://ftnick.hyperping.app/">Status Page</a>
-        </div>
       </div>
-    </footer>
-    <!-- End Footer -->
+    </section>
+    <!-- End Contact Section -->
+  </main>
+  <!-- End #main -->
 
-    <div id="preloader"></div>
-    <a
-      href="#"
-      class="back-to-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="credits">
+        @ftnick | Work In Progress | <a href="https://ftnick.hyperping.app/">Status Page</a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
 
-    <!-- Vendor JS Files -->
-    <script src="https://file.ftnick.xyz/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="https://file.ftnick.xyz/vendor/aos/aos.js"></script>
-    <script src="https://file.ftnick.xyz/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://file.ftnick.xyz/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="https://file.ftnick.xyz/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="https://file.ftnick.xyz/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="https://file.ftnick.xyz/vendor/typed.js/typed.umd.js"></script>
-    <script src="https://file.ftnick.xyz/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="https://file.ftnick.xyz/vendor/php-email-form/validate.js"></script>
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
-    <!-- Template Main JS File -->
-    <script src="https://file.ftnick.xyz/js/main.js"></script>
-  </body>
+  <!-- Vendor JS Files -->
+  <script src="https://file.ftnick.xyz/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="https://file.ftnick.xyz/vendor/aos/aos.js"></script>
+  <script src="https://file.ftnick.xyz/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://file.ftnick.xyz/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="https://file.ftnick.xyz/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="https://file.ftnick.xyz/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://file.ftnick.xyz/vendor/typed.js/typed.umd.js"></script>
+  <script src="https://file.ftnick.xyz/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="https://file.ftnick.xyz/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="https://file.ftnick.xyz/js/main.js"></script>
+
+
+  <div id="notification">
+    <h2>WARNING</h2>
+    <p>Site is currently down, redirecting...</p>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var notification = document.getElementById('notification');
+      notification.style.display = 'block';
+      setTimeout(function () {
+        window.location.href = 'https://ftnick.xyz/down';
+      }, 3000);
+    });
+  </script>
+</body>
+
 </html>
