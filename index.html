@@ -30,21 +30,6 @@
 
   <!-- Template Main CSS File -->
   <link href="https://file.ftnick.xyz/css/style.css" rel="stylesheet" />
-
-  <style>
-    #notification {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #f3f3f3;
-      padding: 20px;
-      border: 1px solid #ccc;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      z-index: 1000;
-      display: none;
-    }
-  </style>
 </head>
 
 <body>
@@ -682,22 +667,6 @@
 
   <!-- Template Main JS File -->
   <script src="https://file.ftnick.xyz/js/main.js"></script>
-
-
-  <div id="notification">
-    <h2>WARNING</h2>
-    <p>Site is currently down, redirecting...</p>
-    <p>Haven't been redirected? No sweat, have a nice look at the unformatted homepage.</p>
-  </div>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var notification = document.getElementById('notification');
-      notification.style.display = 'block';
-      setTimeout(function () {
-        window.location.href = 'https://ftnick.xyz/down';
-      }, 100);
-    });
-  </script>
 </body>
 
 </html>
