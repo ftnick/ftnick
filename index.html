@@ -687,6 +687,7 @@
   <div id="notification">
     <h2>WARNING</h2>
     <p>Site is currently down, redirecting...</p>
+    <p>Haven't been redirected? No sweat, have a nice look at the unformatted homepage.</p>
   </div>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -694,7 +695,7 @@
       notification.style.display = 'block';
       setTimeout(function () {
         window.location.href = 'https://ftnick.xyz/down';
-      }, 3000);
+      }, 100);
     });
   </script>
 </body>
