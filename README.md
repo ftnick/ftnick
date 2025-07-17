@@ -20,7 +20,3 @@ My interests include:
 - Building private frameworks for automation and control
 
 I treat every project as an opportunity to refine my craft, learn deeper layers of the systems I work with, and build things that others told me "aren't possible."
-
----
-
-**Discord:** @ftnick
