@@ -19,6 +19,5 @@ I treat every project as an opportunity to refine my skills, learn deeper layers
 
 ---
 
-*Discord:* [@ftnick](https://discord.com/users/701632642822701057)
-
-> Open to discuss projects
+**Discord:** [@ftnick](https://discord.com/users/701632642822701057)
+> Open to discuss projects.
